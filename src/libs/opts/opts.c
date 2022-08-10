@@ -778,7 +778,7 @@ bool readOptionData (struct OptionData * optionData, Key * key, const char * met
 	}
 
 	strncpy (metaBuffer, metaKey, ELEKTRA_MAX_ARRAY_SIZE + 3); // 3 = opt/ - null byte from ELEKTRA_MAX_SIZE
-	strncat (metaBuffer, "/arg/help", 11);			   // 11 = remaining space in metaBuffer
+	strncat (metaBuffer, "/arg/name", 11);			   // 11 = remaining space in metaBuffer
 
 	const char * argNameMeta = keyGetMetaString (key, metaBuffer);
 
